@@ -11,6 +11,7 @@ module Intrinsic
       check_types_for name, type, options
       define_method name, property_block(name, type)
       @properties << name
+      @defaults[name.to_sym] = options[:default]
     end
 
       def check_types_for(name, type, options)
