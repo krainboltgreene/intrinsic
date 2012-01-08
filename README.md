@@ -24,6 +24,32 @@ In addition you get these cool features:
   - Chainable syntax for property setting: `Person.new.name("Kurtis").age(24)`
 
 
+Here's an example of a Class modified by intrinsic:
+
+``` ruby
+require 'intrinsic'
+
+class Person
+  include Intrinsic
+  include Intrinsic::Intrinsicism::Validation
+
+  property :name
+  property :email
+  property :age, Integer, default: 13
+
+  validation_for :name  { name.match /\w/ }
+  validation_for :age   { (13..100).include? age }
+  validation_for :email { email.count('@') == 1 and (5..256).include? email.length }
+end
+
+person = Person.new name: "Kurtis"     # => #<Person:2152879000 name="Kurtis", email=nil, age=13>
+person.name("Hurly Burly").age("34")   # => #<Person:2153464580 name="Hurly Burly", age=34>
+person.name                            # => "Hurly Burly"
+person.is_valid?                       # => false
+person.errors                          # => ["email is not valid"]
+```
+
+
 **Alternatives**
 
 You may have noticed some alternative gems out there!
