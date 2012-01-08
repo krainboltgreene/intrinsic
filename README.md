@@ -19,9 +19,9 @@ The basic features are:
 
 In addition you get these cool features:
 
-  -
   - Validate your properties with simple boolean logic, no complex `Validator` classes!
   - Simple error messages when your validations don't work (basic strings for now)
+  - Chainable syntax for property setting: `Person.new.name("Kurtis").age(24)`
 
 
 installing
