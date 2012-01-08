@@ -12,6 +12,10 @@ module Intrinsic::Intrinsicism
       add_validators property, block
     end
 
+    def is_valid?(property = nil)
+      self.class.validators.all? { |property, validator| validate property, validator }
+    end
+
     def add_validators(property = nil, block = nil)
       @validators ||= {}
       @validators[property] = block
