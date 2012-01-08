@@ -19,6 +19,7 @@ module Intrinsic
       def property_block(name, type)
         ->(value = nil) do
           unless value.nil?
+            @properties[name.to_sym] = Coercion.const_get(type.name.to_sym).convert value
           else
           end
         end
