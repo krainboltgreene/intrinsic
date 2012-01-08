@@ -21,6 +21,8 @@ module Intrinsic::Intrinsicism
       @validators ||= {}
       @validators[property] = block
     end
+
+    private
       def validate(property, validator)
       end
 
