@@ -10,9 +10,9 @@ usage
 Using the intrinsic library is pretty simple and it works much like [ActiveModel](https://github.com/rails/rails/tree/master/activemodel) or [Virtus](https://github.com/solnic/virtus).
 The basic features are:
 
-  - Getters & Setters for named properties (similar to attr_accessor)
-  - Default values, both in regular and Proc (ie callable lambda) form
-  - Easy API for dumping object attributes (similar to ostruct)
+  - Getters & Setters for named properties (similar to `attr_accessor`)
+  - Default values, both in regular and Proc (ie callable `lambda`) form
+  - Easy API for dumping object attributes (similar to `ostruct`)
   - Type and Argument errors for incorrectly supplied properties
   - Type coercion for attributes, as well as easily defininable new types
 
