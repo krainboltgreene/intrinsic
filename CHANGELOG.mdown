@@ -1,6 +1,15 @@
+1.0.3 / 2012-01-08
+==================
+
+  * Adding the previous commit log to changelog
+  * Refactoring into single line validators
+  * Removing type due to default type being string
+  * Writing up the README documentation
+
 
 1.0.0 / 2012-01-08
 ==================
+
   * Merge branch 'release/1.0.0' into develop
   * Incrementing the version number.
   * Assigning errors if validation result was false

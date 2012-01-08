@@ -70,9 +70,8 @@ We welcome any pull requests or commits that improve `intrinsic`.
 changelog
 ---------
 
-  - 1.0.2:
-      * Adding helpful README and license
-      * Updating the example script with the defaults and changing to single line validators
+  - 1.0.3:
+      * Adding helpful README and license, updating example script
   - 1.0.0: Initial release
 
 
