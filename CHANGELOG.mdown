@@ -2,6 +2,7 @@
 ==================
 
   * Adding TODO's and bugs to fix
+  * Documenting the check_properties_of method
   * Documenting the redefine of the to_s method
   * Documenting the initialize method provided to objects
   * Detailing the internals of the included hook
