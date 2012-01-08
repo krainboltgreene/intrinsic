@@ -38,8 +38,12 @@ module Intrinsic
   end
 
   private
+    # Defining a method that makes sure all of the properties are within
+    # the list of class properties
     def check_properties_of(values)
+      # Go over each key, and if it results in false raise an ArgumentError
       raise ArgumentError unless values.each_key.all? do |property|
+        # Check to see if the property is included in the class property list
         self.class.properties.include? property
       end
     end
