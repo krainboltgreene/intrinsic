@@ -4,8 +4,8 @@ class Person
   include Intrinsic
   include Intrinsic::Intrinsicism::Validation
 
-  property :name, String
-  property :email, String
+  property :name
+  property :email
   property :age, Integer, default: 13
 
   validation_for :name do
