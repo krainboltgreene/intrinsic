@@ -93,7 +93,7 @@ Or add it to your `Gemfile`:
 ``` ruby
 source :rubygems
 
-gem "intrinsic", "1.0.3"
+gem "intrinsic", "1.1.0"
 ```
 
 That's all you have to do.
@@ -120,8 +120,8 @@ We welcome any pull requests or commits that improve `intrinsic`.
 changelog
 ---------
 
-  - 1.0.3:
-      * Adding helpful README and license, updating example script
+  - 1.1.0: Documentation of the intrinsic module, updating of readme details
+  - 1.0.3: Adding helpful README and license, updating example script
   - 1.0.0: Initial release
 
 
@@ -153,7 +153,7 @@ Credits
 License
 -------
 
-Copyright (c) 2011 Kurtis Rainbolt-Greene
+Copyright (c) 2012 Kurtis Rainbolt-Greene
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
