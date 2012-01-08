@@ -24,6 +24,15 @@ In addition you get these cool features:
   - Chainable syntax for property setting: `Person.new.name("Kurtis").age(24)`
 
 
+**Alternatives**
+
+You may have noticed some alternative gems out there!
+This is great, because it gives you a keen eye on how to make intrinsic better.
+Here's a list of what those alternatives are and why I think Intrinsic should exist:
+
+All of these alternatives are worth looking into!
+
+
 installing
 ----------
 
