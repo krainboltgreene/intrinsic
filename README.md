@@ -7,7 +7,7 @@ The intrinsic gem is for giving your objects typed attributes, defaults, and val
 usage
 -----
 
-Using the intrinsic library is pretty simple.
+Using the intrinsic library is pretty simple and it works much like [ActiveModel](https://github.com/rails/rails/tree/master/activemodel) or [Virtus](https://github.com/solnic/virtus).
 The basic features are:
 
   - Getters & Setters for named properties (similar to attr_accessor)
