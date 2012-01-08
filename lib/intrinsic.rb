@@ -2,6 +2,8 @@ require 'intrinsic/version'
 require 'intrinsic/intrinsicism'
 require 'intrinsic/extrinsicism'
 
+# The Intrinsic model is the gateway to all the sub models, and by including
+# it into a model or class you gain all of the power of the library
 module Intrinsic
   def self.included(subject)
     super
