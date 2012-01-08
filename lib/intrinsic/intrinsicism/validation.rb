@@ -29,6 +29,10 @@ module Intrinsic::Intrinsicism
         rescue
           validation_result = false
         end
+
+        unless validation_result
+          @errors ||= []
+          @errors << "#{property} is not valid"
         end
       end
 
