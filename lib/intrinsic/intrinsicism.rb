@@ -17,6 +17,8 @@ module Intrinsic
       end
 
       def property_block(name, type)
+        ->(value = nil) do
+        end
       end
   end
 end
