@@ -9,6 +9,7 @@ module Intrinsic::Intrinsicism
 
     def validation_for(property, &block)
       check_for_property property
+      add_validators property, block
     end
 
       def check_for_property(property)
