@@ -10,6 +10,7 @@ module Intrinsic
       @defaults ||= {}
       check_types_for name, type, options
       define_method name, property_block(name, type)
+      @properties << name
     end
 
       def check_types_for(name, type, options)
