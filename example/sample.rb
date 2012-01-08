@@ -4,21 +4,13 @@ class Person
   include Intrinsic
   include Intrinsic::Intrinsicism::Validation
 
-  property :name, String
-  property :email, String
+  property :name
+  property :email
   property :age, Integer, default: 13
 
-  validation_for :name do
-    name.match /\w/
-  end
-
-  validation_for :age do
-    (13..100).include? age
-  end
-
-  validation_for :email do
-    email.count('@') == 1 and email.length < 256 and email.length > 5
-  end
+  validation_for :name  { name.match /\w/ }
+  validation_for :age   { (13..100).include? age }
+  validation_for :email { email.count('@') == 1 and (5..256).include? email.length }
 end
 
 
