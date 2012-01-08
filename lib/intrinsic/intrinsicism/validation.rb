@@ -25,6 +25,7 @@ module Intrinsic::Intrinsicism
     private
       def validate(property, validator)
         begin
+          validation_result = instance_eval &validator
         rescue
         end
       end
