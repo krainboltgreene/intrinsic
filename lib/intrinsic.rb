@@ -10,8 +10,11 @@ module Intrinsic
   # meaning that singleton and instance methods exist on the class and instance
   # of the class.
   def self.included(subject)
+    # Make a call to the superclass original included method
     super
+    # Extend the class with the model to get the singleton methods
     subject.extend Intrinsicism
+    # Send the include method with the model as an argument
     subject.send :include, Intrinsicism
   end
 
