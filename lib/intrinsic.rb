@@ -14,6 +14,7 @@ module Intrinsic
   end
 
   def to_s
+    "#<#{self.class}:#{self.object_id} #{properties.map{|k,v| k.to_s + '=' + v.inspect}.join(', ')}>"
   end
 
 end
