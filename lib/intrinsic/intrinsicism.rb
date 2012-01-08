@@ -14,6 +14,7 @@ module Intrinsic
       @defaults[name.to_sym] = options[:default]
     end
 
+    private
       def check_types_for(name, type, options)
         raise TypeError unless name.is_a? Symbol
         raise TypeError unless Intrinsic.const_get(type.name.to_sym).is_a? Class
