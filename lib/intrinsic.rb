@@ -13,6 +13,7 @@ module Intrinsic
     @properties = {}.merge self.class.defaults
     check_properties_of values
     values.each { |property, value| send property.to_sym, value }
+    self
   end
 
   def to_s
