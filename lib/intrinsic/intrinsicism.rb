@@ -15,5 +15,8 @@ module Intrinsic
         raise TypeError unless Intrinsic.const_get(type.name.to_sym).is_a? Class
         raise TypeError unless options.is_a? Hash
       end
+
+      def property_block(name, type)
+      end
   end
 end
