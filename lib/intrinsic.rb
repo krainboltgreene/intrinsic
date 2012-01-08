@@ -11,4 +11,6 @@ module Intrinsic
 
   def initialize(values = {})
   end
+  def to_s
+  end
 end
