@@ -120,8 +120,8 @@ We welcome any pull requests or commits that improve `intrinsic`.
 changelog
 ---------
 
-  - 1.0.3:
-      * Adding helpful README and license, updating example script
+  - 1.1.0: Documentation of the intrinsic module, updating of readme details
+  - 1.0.3: Adding helpful README and license, updating example script
   - 1.0.0: Initial release
 
 
