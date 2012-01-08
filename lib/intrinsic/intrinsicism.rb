@@ -18,6 +18,9 @@ module Intrinsic
 
       def property_block(name, type)
         ->(value = nil) do
+          unless value.nil?
+          else
+          end
         end
       end
   end
