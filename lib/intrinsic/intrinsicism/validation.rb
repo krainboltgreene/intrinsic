@@ -12,6 +12,8 @@ module Intrinsic::Intrinsicism
       add_validators property, block
     end
 
+    def add_validators(property = nil, block = nil)
+    end
       def check_for_property(property)
         raise TypeError unless properties.include? property
       end
