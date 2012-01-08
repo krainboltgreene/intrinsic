@@ -96,9 +96,8 @@ contributing
 Credits
 -------
 
-  - []()
-  - []()
-  - []()
+  - [Piotr Solnica](https://github.com/solnic) for starting [Virtus](https://github.com/solnic/virtus) and inspiring me to build my own version of the concept.
+  - [Yehuda Katz](https://github.com/wycats) for pulling out [ActiveModel](https://github.com/rails/rails/tree/master/activemodel), thus inspiring me to work on my own.
 
 
 License
