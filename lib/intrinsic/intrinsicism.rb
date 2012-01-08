@@ -28,6 +28,7 @@ module Intrinsic
             self.instance_variable_set :"@#{name.to_sym}", value
             self
           else
+            value = @properties[name.to_sym]
           end
         end
       end
