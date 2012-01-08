@@ -1,3 +1,5 @@
+require_relative 'intrinsicism/coercion'
+
 module Intrinsic
   module Intrinsicism
 
