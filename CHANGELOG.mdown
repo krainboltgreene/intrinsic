@@ -1,0 +1,61 @@
+
+1.0.0 / 2012-01-08
+==================
+  * Merge branch 'release/1.0.0' into develop
+  * Incrementing the version number.
+  * Assigning errors if validation result was false
+  * Assigning the false setter to validation_result if raised
+  * Attempt to evaluate the validator
+  * Make begin, rescue, end blocks
+  * Defining under private
+  * Adding the validate action method
+  * Adding the is_valid method which calls on all the validators
+  * If validators hash is nil, make one, then fill with proerpty/vlock
+  * Defining the base add_validators method
+  * Calling the add_validators to add to list of validators
+  * Raise if the property isnt a part of the list
+  * Calling check_for_property on property
+  * Defining the base validation_for method
+  * Redifing the included method to extend with validation
+  * Require in the validation library and build skeleton
+  * Return self for chaining
+  * Set each key value as property and value
+  * Raise if any of the keys don't belong
+  * On initialize check the properties of list and define private method
+  * If value is a proc, call the proc with self as argument
+  * If no value given, print out value
+  * Print out class name, object id, and list of properties
+  * Returning self, for chaining
+  * Setting an instance variable with the property as the name and value equal to property value
+  * Making the check_for_types and property block methods private
+  * Assigning property as key and default as value for defaults
+  * Assigning property symbol to list of properties for class
+  * Building up proc, integer, and string coercion logic
+  * Defining and requiring three coercion types
+  * Building the Coercion library
+  * Require the coercion library
+  * Convert value to type and then assign to hash
+  * Defining unless statement for value of value paramater
+  * Defining a lambda that takes a single value for property_block
+  * Creating the property_block method
+  * Defining the method name with a block of the property
+  * Method for checking the types of the arguments
+  * Merginging the properties with the class defaults
+  * Initializing the defaults and properties lists as attributes
+  * Defining the property class method
+  * Building up the intrinsicism module
+  * Building up the Extrinsicism library
+  * Adding a test object to play around with for testing
+  * Building out some sample and testable data cases
+  * Adding whitespace
+  * Modifying the to_s of the model
+  * Creating a custom initialize method for intrinsic models
+  * Modifying the module method included to concern Intrinsicism
+  * Adding a skeleton test helper library
+  * Requiring a test helper library
+  * Adding the skeleton intrinsicism test
+  * Requiring the intrinsicism library
+  * Requiring the extrinsicism library
+  * Switching to single quotes
+  * Updating the gemspec with proper details
+  * Initial commit
