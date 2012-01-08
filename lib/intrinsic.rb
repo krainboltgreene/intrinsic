@@ -5,6 +5,10 @@ require 'intrinsic/extrinsicism'
 # The Intrinsic model is the gateway to all the sub models, and by including
 # it into a model or class you gain all of the power of the library
 module Intrinsic
+
+  # Defines a hooks onto `include` so that the subject is also extended with the model
+  # meaning that singleton and instance methods exist on the class and instance
+  # of the class.
   def self.included(subject)
     super
     subject.extend Intrinsicism
