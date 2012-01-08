@@ -27,6 +27,8 @@ module Intrinsic::Intrinsicism
         begin
           validation_result = instance_eval &validator
         rescue
+          validation_result = false
+        end
         end
       end
 
