@@ -3,5 +3,9 @@ require 'intrinsic/intrinsicism'
 require 'intrinsic/extrinsicism'
 
 module Intrinsic
-  # Your code goes here...
+  def self.included(subject)
+    super
+    subject.extend Intrinsicism
+    subject.send :include, Intrinsicism
+  end
 end
