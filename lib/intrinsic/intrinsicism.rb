@@ -29,6 +29,11 @@ module Intrinsic
             self
           else
             value = @properties[name.to_sym]
+            unless value.is_a? Proc
+              value
+            else
+              value.call(self)
+            end
           end
         end
       end
