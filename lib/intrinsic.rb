@@ -1,4 +1,4 @@
-require "intrinsic/version"
+require 'intrinsic/version'
 
 module Intrinsic
   # Your code goes here...
