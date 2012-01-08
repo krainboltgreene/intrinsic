@@ -10,6 +10,7 @@ module Intrinsic
   end
 
   def initialize(values = {})
+    @properties = {}.merge self.class.defaults
   end
 
   def to_s
