@@ -32,6 +32,7 @@ module Intrinsic
     self
   end
 
+  # Redefining the `to_s` method so that print out is prettier
   def to_s
     "#<#{self.class}:#{self.object_id} #{properties.map{|k,v| k.to_s + '=' + v.inspect}.join(', ')}>"
   end
