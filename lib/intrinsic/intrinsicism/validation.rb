@@ -24,6 +24,9 @@ module Intrinsic::Intrinsicism
 
     private
       def validate(property, validator)
+        begin
+        rescue
+        end
       end
 
       def check_for_property(property)
