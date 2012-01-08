@@ -1,4 +1,5 @@
 require_relative 'intrinsicism/coercion'
+require_relative 'intrinsicism/validation'
 
 module Intrinsic
   module Intrinsicism
