@@ -1,6 +1,7 @@
 module Intrinsic::Intrinsicism
   module Validation
 
+    attr_reader :validators, :errors
 
     def self.included(subject)
       super
@@ -20,6 +21,9 @@ module Intrinsic::Intrinsicism
       @validators ||= {}
       @validators[property] = block
     end
+      def validate(property, validator)
+      end
+
       def check_for_property(property)
         raise TypeError unless properties.include? property
       end
