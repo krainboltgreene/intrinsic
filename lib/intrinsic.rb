@@ -18,10 +18,17 @@ module Intrinsic
     subject.send :include, Intrinsicism
   end
 
+  # Defines the initialize method that takes a hash and sets the properties
+  # to those values. It also takes the defaults and assigns them to the properties.
   def initialize(values = {})
+    # Create a new empty table for the properties, and then merge in the defaults
     @properties = {}.merge self.class.defaults
+    # Check to make sure all of the given properties are within the acceptable list
     check_properties_of values
+    # Go over each property-value pair and send the value to the correct
+    # property method
     values.each { |property, value| send property.to_sym, value }
+    # Return the object for chaining purposes
     self
   end
 
