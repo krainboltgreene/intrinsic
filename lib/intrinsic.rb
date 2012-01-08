@@ -8,4 +8,7 @@ module Intrinsic
     subject.extend Intrinsicism
     subject.send :include, Intrinsicism
   end
+
+  def initialize(values = {})
+  end
 end
