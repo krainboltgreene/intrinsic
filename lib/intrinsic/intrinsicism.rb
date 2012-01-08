@@ -26,6 +26,7 @@ module Intrinsic
           unless value.nil?
             @properties[name.to_sym] = Coercion.const_get(type.name.to_sym).convert value
             self.instance_variable_set :"@#{name.to_sym}", value
+            self
           else
           end
         end
