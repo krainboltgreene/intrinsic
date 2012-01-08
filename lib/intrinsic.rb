@@ -20,5 +20,8 @@ module Intrinsic
 
   private
     def check_properties_of(values)
+      raise ArgumentError unless values.each_key.all? do |property|
+        self.class.properties.include? property
+      end
     end
 end
