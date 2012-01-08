@@ -30,6 +30,13 @@ You may have noticed some alternative gems out there!
 This is great, because it gives you a keen eye on how to make intrinsic better.
 Here's a list of what those alternatives are and why I think Intrinsic should exist:
 
+  * *ActiveModel*
+      - **Pro**: Extremely large community and support over intrinsic
+      - Pro: Well tested, documented, and designed
+      - Pro: Continually worked on by many
+      - **Con**: Large and bulky, with far too many tools in the toolbox
+      - Con: Always tied to Rails
+      - Con: Complex inner workings for even simple things
 All of these alternatives are worth looking into!
 
 
