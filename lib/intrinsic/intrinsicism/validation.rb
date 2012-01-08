@@ -6,5 +6,8 @@ module Intrinsic::Intrinsicism
       super
       subject.extend Validation
     end
+
+    def validation_for(property, &block)
+    end
   end
 end
