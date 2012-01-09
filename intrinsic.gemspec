@@ -18,6 +18,6 @@ Gem::Specification.new do |gem|
   gem.version       = Intrinsic::VERSION
 
   gem.add_development_dependency 'rake', '0.9.2.2'
-  gem.add_development_dependency 'yard', '0.7.4'
+  gem.add_development_dependency 'rocco', '~> 0.8'
 end
 
