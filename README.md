@@ -67,7 +67,8 @@ Here's a list of what those alternatives are and why I think Intrinsic should ex
       - **Pro**: Well maintained and contributed too.
       - Pro: Extremely well tested and documented
       - Pro: Extended feature set above and beyond intrinsic
-      - Con: Still not version 1.0.0, and thus has an unstable API
+      - **Con**: Still not version 1.0.0, and thus has an unstable API
+      - Con: Does not have any validation logic (although there is a [WIP gem](https://github.com/emmanuel/aequitas))
 
 All of these alternatives are worth looking into!
 
