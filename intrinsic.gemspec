@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'rake', '~> 0.9'
   gem.add_development_dependency 'rocco', '~> 0.8'
+  gem.add_development_dependency 'awesome_print', '~> 1.0'
   gem.add_development_dependency 'guard', '~> 0.10'
   gem.add_development_dependency 'guard-minitest', '~> 0.4'
   gem.add_development_dependency 'guard-rocco', '~> 0.0.3'
