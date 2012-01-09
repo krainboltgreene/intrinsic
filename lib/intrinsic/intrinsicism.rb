@@ -8,6 +8,10 @@ require_relative 'intrinsicism/validation'
 module Intrinsic
   module Intrinsicism
 
+    # The readers for @properties and @defaults are used to access both of
+    # those maps. The @properties list is for detailing the properties attached
+    # to the class. The @defaults map is a hash of the properties and their
+    # default values.
     attr_reader :properties, :defaults
 
     def property(name, type = String, options = {})
