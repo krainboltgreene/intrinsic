@@ -14,6 +14,11 @@ module Intrinsic
     # default values.
     attr_reader :properties, :defaults
 
+    # The property method gets assigned as a self method and instance method
+    # to any modules, classes, or objects that include Intrinsic::Intrinsicism.
+    #
+    # It takes 1 required argument (name), and 2 option arguments (type and options).
+    # The name paramter passed through determines the property name, while
     def property(name, type = String, options = {})
       @properties ||= []
       @defaults ||= {}
