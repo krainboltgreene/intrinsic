@@ -1,6 +1,10 @@
 require_relative 'intrinsicism/coercion'
 require_relative 'intrinsicism/validation'
 
+# The Intrinsicism module contains all of the logic for properties, validations,
+# and coercions. To be more abstract this is where all the object-focused code
+# goes under this namespace.
+
 module Intrinsic
   module Intrinsicism
 
