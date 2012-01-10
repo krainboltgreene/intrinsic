@@ -1,10 +1,10 @@
 module Intrinsic
   module Intrinsicism
     module Coercion
-      module String
+      module Array
         def self.convert(value)
           begin
-            value.to_s
+            value.to_a
           rescue
             raise TypeError
           end
