@@ -1,3 +1,14 @@
+1.2.0 / 2012-01-09
+==================
+
+  * Adding the symbol coercion logic
+  * Adding the hash coercion logic
+  * Adding the array coercion logic
+  * Wrapping coercion in begin/rescue blocks with raise typerrors
+  * Switching from classes to modules
+  * Switching to nested structure for coercion
+
+
 1.1.0 / 2012-01-08
 ==================
 
@@ -8,15 +19,14 @@
   * Detailing the internals of the included hook
   * Documenting the included hook
   * Documenting details about the intrinsic model
-  * ADding an example of usage from the sample file
-  * ADding a list of pros and cons for Virtus
+  * Adding an example of usage from the sample file
+  * Adding a list of pros and cons for Virtus
   * Adding a list of pros and cons for activemodel
   * Adding a section on alternatives
   * Adding in the two people who deserve credit the most
   * Updating the gem version
   * Adding chainable syntax detail
   * Extrapolating on idea
-  * Adding code markup
   * Adding code markup
 
 
@@ -32,7 +42,6 @@
 1.0.0 / 2012-01-08
 ==================
 
-  * Merge branch 'release/1.0.0' into develop
   * Incrementing the version number.
   * Assigning errors if validation result was false
   * Assigning the false setter to validation_result if raised
