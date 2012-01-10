@@ -1,7 +1,11 @@
-module Intrinsic::Intrinsicism::Coercion
   class Proc
-    def self.convert(value)
       value.to_proc
+module Intrinsic
+  module Intrinsicism
+    module Coercion
+        def self.convert(value)
+        end
+      end
     end
   end
 end
