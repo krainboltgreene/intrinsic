@@ -1,3 +1,14 @@
+1.2.0 / 2012-01-09
+==================
+
+  * Adding the symbol coercion logic
+  * Adding the hash coercion logic
+  * Adding the array coercion logic
+  * Wrapping coercion in begin/rescue blocks with raise typerrors
+  * Switching from classes to modules
+  * Switching to nested structure for coercion
+
+
 1.1.0 / 2012-01-08
 ==================
 
