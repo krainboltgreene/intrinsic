@@ -93,7 +93,7 @@ Or add it to your `Gemfile`:
 ``` ruby
 source :rubygems
 
-gem "intrinsic", "1.1.0"
+gem "intrinsic", "1.2.0"
 ```
 
 That's all you have to do.
