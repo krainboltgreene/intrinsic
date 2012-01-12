@@ -18,22 +18,23 @@ module Intrinsic
     private
       def check_types_for(name, type, options)
         raise TypeError unless name.is_a? Symbol
-        raise TypeError unless Intrinsic.const_get(type.name.to_sym).is_a? Class
+        raise TypeError unless type.is_a? Class
         raise TypeError unless options.is_a? Hash
       end
 
       def property_block(name, type)
         ->(value = nil) do
+          key = name.to_sym.freeze
           unless value.nil?
-            @properties[name.to_sym] = Coercion.const_get(type.name.to_sym).convert value
-            self.instance_variable_set :"@#{name.to_sym}", value
+            @properties[key] = Coercion.convert value, type
+            instance_variable_set :"@#{key}", value
             self
           else
-            value = @properties[name.to_sym]
+            value = @properties[key]
             unless value.is_a? Proc
               value
             else
-              value.call(self)
+              value.call self
             end
           end
         end
